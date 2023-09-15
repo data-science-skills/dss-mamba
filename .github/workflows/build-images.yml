@@ -3,7 +3,7 @@ name: Build & Publish Tagged Docker Image
 on:
   push:
     branches:
-      - * 
+      - "*"
   release:
     types: [published]
 
