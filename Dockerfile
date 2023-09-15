@@ -5,8 +5,8 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.202/qua
 RUN dpkg -i quarto*
 RUN rm quarto*
 
-# Install hugo
-RUN wget https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_0.118.2_linux-amd64.deb
+# Install hugo extended version with scss support
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_linux-amd64.deb
 RUN dpkg -i hugo*
 RUN rm hugo*
 
