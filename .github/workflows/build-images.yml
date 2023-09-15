@@ -19,7 +19,7 @@ jobs:
         id: metacc
         uses: docker/metadata-action@v5
         with:
-          images: data-science-skills/dss-mamba
+          images: leahawasser/dss-mamba
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
