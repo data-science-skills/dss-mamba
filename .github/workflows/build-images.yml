@@ -33,8 +33,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
 
       - name: Build & publish to DockerHub
         if: github.event_name == 'release'
@@ -42,5 +40,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.metacc.outputs.tags }}
+          labels: ${{ steps.metacc.outputs.labels }}
